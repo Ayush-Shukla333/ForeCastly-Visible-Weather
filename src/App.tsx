@@ -6,7 +6,7 @@ import CityPage from "./pages/city-page";
 import WeatherDashboard from "./pages/weather-dashboard";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import React, { useState } from "react";
+import {useState } from "react";
 import { fetchWeather } from "./services/api";
 
 const queryClient = new QueryClient();
@@ -32,7 +32,6 @@ function App() {
       <BrowserRouter>
         <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
           <Layout>
-            {/* Weather Search Section */}
             <div className="p-6">
               <input
                 type="text"
